@@ -31,3 +31,11 @@ class EstateProperty(models.Model):
         ("east", "East"),
         ("west", "West"),
     ])
+    property_type_id = fields.Many2one("estate.property.type", string="Property Type")
+    buyer_id = fields.Many2one("res.partner")
+    salesperson_id = fields.Many2one("res.users")
+
+    _sql_constraints = [
+        ('check_expected_price', 'CHECK(expected_price > 0)',
+         'The expected price must be greater than 0')
+    ]

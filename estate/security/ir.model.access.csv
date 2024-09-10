@@ -1,3 +1,5 @@
 id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
 base_estate_property,base_estate_property,model_estate_property,base.group_user,1,0,0,0
 admin_estate_property,admin_estate_property,model_estate_property,base.group_system,1,1,1,1
+base_estate_property_type,base_estate_property_type,model_estate_property_type,base.group_user,1,0,0,0
+admin_estate_property_type,admin_estate_property_type,model_estate_property_type,base.group_system,1,1,1,1
